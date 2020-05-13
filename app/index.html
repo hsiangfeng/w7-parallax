@@ -1,12 +1,118 @@
 ---
-title: 首頁
+title: Fixie
 layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
 
-<h1>
-  這是一段話
-</h1>
-
-<div class="box"></div>
+<section class="gear" id="gear">
+  <div class="gear__read-bg">
+    <div class="gear__read-bg__arrow d-flex-center">
+      <span class="material-icons">arrow_forward</span>
+    </div>
+  </div>
+  <div class="gear__content">
+    <a href="#" class="gear__content__more">
+      Read More
+    </a>
+    <div class="gear__content__desc d-flex flex-column justify-content-around">
+      <p>
+        A fixed gear drivetrain is more mechanically efficient than any other bicycle drivetrain, with the most direct
+        power transfer from rider to the wheels. Thus, it requires less energy in any given gear to move than a geared
+        bike in the same gear.
+      </p>
+      <h3 class="fs-italic">
+        <span class="gear__content__title">One Gear,</span>
+        <br>
+        <span class="gear__content__subtitle">Many Variations</span>
+      </h3>
+    </div>
+  </div>
+</section>
+<section class="stripped" id="stripped">
+  <div class="stripped__content">
+    <div class="stripped__read-bg__arrow d-flex-center">
+      <span class="material-icons">arrow_forward</span>
+    </div>
+    <div class="stripped__content__desc d-flex flex-column justify-content-around">
+      <h3 class="fs-italic">
+        <span class="stripped__content__title">Stripped-Down</span>
+        <br>
+        <span class="stripped__content__subtitle">Performance</span>
+      </h3>
+      <p>
+        Without the added parts required for a fully geared drive train—derailleurs, shifters, cables, cable carriers,
+        multiple chain rings, freewheel hub, brazed-on mounting lugs—a fixed gear bicycle weighs less than its geared
+        equivalent.
+      </p>
+    </div>
+  </div>
+  <div class="stripped__read-bg">
+    <a href="#" class="stripped__content__more">
+      Read More
+    </a>
+  </div>
+</section>
+<section calss="collection" id="collection">
+  <div class="collection__main d-flex-center flex-column">
+    <h4 class="fs-italic">A collection built for regular commuters</h4>
+    <p>
+      Riders unknown to each other commonly greet each other when on bikes. As in many subcultures, this feeling of
+      belonging is a key factor in recruiting and retaining participants.
+    </p>
+  </div>
+  <div class="collection__bg d-flex align-items-end">
+    <div class="collection__bg__desc d-flex justify-content-around flex-column">
+      <p class="fs-italic">“I like to ride. Fixed gear. No brakes. Can’t stop. Don’t want to, either.”</p>
+      <h6>
+        <span class="fs-italic">Premium Rush</span> (2012)
+      </h6>
+    </div>
+  </div>
+</section>
+<section class="fixie" id="fixie">
+  <ul class="fixie__card">
+    <li class="fixie_card1">
+      <div class="fixie__card__header">
+        <img src="./assets/images/benedikt-geyer-KoMiEAaFLsE-unsplash.jpg" alt="">
+      </div>
+      <div class="fixie__card__body">
+        <h6 class="fs-italic">
+          All who cycle are my friends
+        </h6>
+        <time>2020.4.27</time>
+        <p>
+          A rider from Stockholm interviewed for an article about the phenomenon notes that riding a bike imparts a feeling of freedom to the rider…
+        </p>
+      </div>
+    </li>
+    <li class="fixie_card2">
+      <div class="fixie__card__header">
+        <img src="./assets/images/janusz-maniak-VqwaNLsGqcs-unsplash.jpg" alt="">
+      </div>
+      <div class="fixie__card__body">
+        <h6 class="fs-italic">
+          Swedish riders and enthusiasts
+        </h6>
+        <time>2020.3.11</time>
+        <p>
+          There are also several bicycle clubs throughout Sweden with a fixed-gear niche. Komet Club Rouler is a club based in Gothenburg, annually arranging Svart Kat…
+        </p>
+      </div>
+    </li>
+    <li class="fixie_card3">
+      <div class="fixie__card__header">
+        <img src="./assets/images/yerko-lucic-eiie8Sduf4I-unsplash.jpg" alt="">
+      </div>
+      <div class="fixie__card__body">
+        <h6 class="fs-italic">
+          The Australian fixie culture
+        </h6>
+        <time>2020.2.29</time>
+        <p>
+          Online stores in Australia ship partially-assembled bikes directly to consumers, considerably undercutting prices at typical brick and mortar stores…
+        </p>
+      </div>
+    </li>
+  </ul>
+</section>

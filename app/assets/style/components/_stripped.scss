@@ -1,0 +1,109 @@
+.stripped {
+  display: flex;
+  &__read-bg {
+    background-image: url('../images/josh-nuttall-76DfCHM-4u0-unsplash.jpg');
+    background-position: -228px center;
+    background-size: cover;
+    height: 960px;
+    max-width: 960px;
+    width: 100%;
+    position: relative;
+    transition: all 0.8s;
+    transform: translateX(100%);
+    .active & {
+      transform: translateX(0%);
+    }
+  }
+  &__content {
+    background-color: #F1F5F6;
+    width: 100%;
+    position: relative;
+    transition: all 0.8s;
+    opacity: 0;
+    .active & {
+      opacity: 1;
+    }
+  }
+}
+
+.stripped__content {
+  &__desc {
+    height: 100%;
+  }
+  &__desc h3{
+    font-size: 72px;
+    margin-left: 96px;
+    transition: all 0.8s;
+  }
+  &__desc p {
+    margin-left: 225px;
+    color: #00000099;
+    text-align: right;
+    line-height: 24px;
+    width: 570px;
+    font-family: 'Lato', 'serif';
+    transition: all 0.8s;
+  }
+  &__title {
+    font-size: 72px;
+    transform: translateX(-200%);
+    transition: all 0.8s;
+    display: inline-block;
+    .active & {
+      transform: translateX(0%);
+    }
+    &.activeStripped {
+      margin-left: -48px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 72px;
+    display: inline-block;
+    transform: translateX(-200%);
+    transition: all 0.8s;
+    .active & {
+      transform: translateX(0%);
+    }
+    &.activeStripped {
+      margin-left: 96px;
+    }
+  }
+
+  &__more {
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #121212;
+    color: #FFFFFF;
+    display: block;
+    height: 61px;
+    width: 0px;
+    text-align: center;
+    line-height: 61px;
+    border: 1px solid #000000;
+    font-family: 'Lato', 'serif';
+    font-weight: bold;
+    font-size: 24px;
+    transition: all 0.8s;
+    transition-delay: 0.8s;
+    overflow: hidden;
+    .active & {
+      width: 150px;
+    }
+  }
+}
+
+
+.stripped__read-bg__arrow {
+  background-color: #F1F5F6;
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000000;
+  z-index: 1;
+}

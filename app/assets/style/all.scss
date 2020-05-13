@@ -1,23 +1,12 @@
-$color: #00cc99;
-
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
-
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
-
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
+@import './helpers/reset';
+// helpers
+@import './helpers/flex';
+@import './helpers/utilities';
+// conponents
+@import './components/navbar';
+@import './components/header';
+@import './components/gear';
+@import './components/stripped';
+@import './components/collection';
+@import './components/fixie';
+@import './components/footer';
