@@ -1,0 +1,554 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+body {
+  overflow-x: hidden; }
+
+html, body {
+  font-family: 'Merriweather', serif; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+.d-flex {
+  display: flex; }
+
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.justify-content-start {
+  justify-content: flex-start; }
+
+.justify-content-end {
+  justify-content: flex-end; }
+
+.justify-content-between {
+  justify-content: space-between; }
+
+.justify-content-center {
+  justify-content: center; }
+
+.justify-content-around {
+  justify-content: space-around; }
+
+.align-items-center {
+  align-items: center; }
+
+.align-items-end {
+  align-items: flex-end; }
+
+.flex-row {
+  flex-direction: row; }
+
+.flex-row-reverse {
+  flex-direction: row-reverse; }
+
+.flex-column {
+  flex-direction: column; }
+
+.flex-column-reverse {
+  flex-direction: column-reverse; }
+
+.flex-column {
+  flex-direction: column; }
+
+.bg-cover {
+  background-position: center center;
+  background-size: cover; }
+
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.text-center {
+  text-align: center; }
+
+.mr-auto {
+  margin-right: auto !important; }
+
+.ml-auto {
+  margin-left: auto !important; }
+
+.fs-italic {
+  font-style: italic; }
+
+.fixieNavbar {
+  padding-right: 48px;
+  padding-left: 48px;
+  border-bottom: 1px solid #000000;
+  transition: all 0.3s;
+  transform: translateY(-100%); }
+  .fixieNavbar.active {
+    transform: translateY(0%); }
+  .fixieNavbar__menu {
+    margin: 0px;
+    list-style: none; }
+  .fixieNavbar__menu li {
+    margin-right: 48px; }
+    .fixieNavbar__menu li:last-child {
+      margin-right: 48px; }
+  .fixieNavbar__menu a {
+    color: #000000; }
+
+.logo {
+  background-image: url("../images/logo-fixie.svg");
+  background-position: center center;
+  background-size: cover;
+  width: 112px;
+  height: 48px;
+  margin: 24px 0;
+  text-indent: 101%;
+  overflow: hidden; }
+
+.header__desc--btn {
+  width: 211px;
+  height: 61px;
+  color: #000000;
+  border: 1px solid #000000;
+  background-color: #F1F5F6;
+  text-align: center;
+  line-height: 61px; }
+
+.header__collection {
+  max-width: 50%;
+  margin-left: 15px; }
+
+.header__desc h2 {
+  width: 690px;
+  font-size: 96px;
+  font-weight: 700;
+  transform: translateX(-200%);
+  opacity: 0;
+  margin-bottom: 48px;
+  transition: transform 0.8s, opacity 1.6s; }
+  .active .header__desc h2 {
+    transform: translateX(0%);
+    opacity: 1; }
+
+.header__desc p {
+  width: 570px;
+  font-size: 24px;
+  line-height: 36px;
+  color: #00000099;
+  transform: translateX(-200%);
+  transition: transform 0.8s, opacity 1.6s;
+  opacity: 0;
+  margin-bottom: 48px;
+  font-family: 'Lato', 'serif'; }
+  .active .header__desc p {
+    transform: translateX(0%);
+    opacity: 1; }
+
+.header__desc .header__desc--btn {
+  transform: translateX(-250%);
+  transition: transform 0.8s, opacity 1.6s;
+  opacity: 0; }
+  .active .header__desc .header__desc--btn {
+    transform: translateX(0%);
+    opacity: 1; }
+
+.header__collection {
+  border: 1px solid #000000;
+  transform: translateX(200%);
+  opacity: 0;
+  transition: transform 0.8s, opacity 1.6s; }
+  .active .header__collection {
+    transform: translateX(0%);
+    opacity: 1; }
+  .header__collection-inner {
+    background-color: #242424; }
+  .header__collection-control--prev, .header__collection-control--next {
+    width: 121px;
+    height: 120px;
+    color: #000000;
+    border-right: 1px solid #000000; }
+  .header__collection-control--caption {
+    font-size: 48px;
+    margin-left: 48px;
+    transition: all 0.8s;
+    transform: translateX(200%);
+    transition-delay: 0.8s; }
+    .active .header__collection-control--caption {
+      transform: translateX(0%); }
+  .header__collection-item {
+    transform: translateX(200%);
+    transition: all 0.8s;
+    transition-delay: 0.8s; }
+    .active .header__collection-item {
+      transform: translateX(0%); }
+
+.gear {
+  display: flex; }
+  .gear__read-bg {
+    background-image: url("../images/josh-nuttall-uNQ-TTg_qNY-unsplash.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 960px;
+    max-width: 960px;
+    width: 100%;
+    position: relative;
+    transition: all 0.8s;
+    transform: translateX(-110%);
+    z-index: 1; }
+    .active .gear__read-bg {
+      transform: translateX(0%); }
+  .gear__content {
+    background-color: #F1F5F6;
+    width: 100%;
+    position: relative;
+    transition: all 0.8s;
+    opacity: 0; }
+    .active .gear__content {
+      opacity: 1; }
+
+.gear__content__desc {
+  height: 100%; }
+
+.gear__content__desc h3 {
+  font-size: 72px;
+  text-align: right;
+  margin-right: 96px;
+  transform: translateX(100%);
+  transition: all 0.8s; }
+  .active .gear__content__desc h3 {
+    transform: translateX(0%); }
+
+.gear__content__desc p {
+  margin-left: 135px;
+  color: #00000099;
+  width: 570px;
+  font-family: 'Lato', 'serif';
+  line-height: 24px;
+  transform: translateX(200%);
+  transition: all 0.8s; }
+  .active .gear__content__desc p {
+    transform: translateX(0%); }
+
+.gear__content__title {
+  font-size: 72px;
+  text-align: right;
+  transform: translateX(100%);
+  transition: all 0.8s; }
+  .gear__content__title.activeStripped {
+    margin-right: 96px; }
+
+.gear__content__subtitle {
+  font-size: 72px;
+  text-align: right;
+  transform: translateX(100%);
+  transition: all 0.8s; }
+  .gear__content__subtitle.activeStripped {
+    margin-right: -48px; }
+
+.gear__content__more {
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #F1F5F6;
+  color: #121212;
+  display: block;
+  height: 61px;
+  width: 0px;
+  text-align: center;
+  line-height: 61px;
+  border: 1px solid #000000;
+  z-index: 1;
+  font-size: 24px;
+  font-family: 'Lato', 'serif';
+  font-weight: bold;
+  transition: all 0.8s;
+  transition-delay: 0.8s;
+  overflow: hidden; }
+  .active .gear__content__more {
+    width: 150px; }
+
+.gear__read-bg__arrow {
+  background-color: #000000;
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff; }
+
+.stripped {
+  display: flex; }
+  .stripped__read-bg {
+    background-image: url("../images/josh-nuttall-76DfCHM-4u0-unsplash.jpg");
+    background-position: -228px center;
+    background-size: cover;
+    height: 960px;
+    max-width: 960px;
+    width: 100%;
+    position: relative;
+    transition: all 0.8s;
+    transform: translateX(100%); }
+    .active .stripped__read-bg {
+      transform: translateX(0%); }
+  .stripped__content {
+    background-color: #F1F5F6;
+    width: 100%;
+    position: relative;
+    transition: all 0.8s;
+    opacity: 0; }
+    .active .stripped__content {
+      opacity: 1; }
+
+.stripped__content__desc {
+  height: 100%; }
+
+.stripped__content__desc h3 {
+  font-size: 72px;
+  margin-left: 96px;
+  transition: all 0.8s; }
+
+.stripped__content__desc p {
+  margin-left: 225px;
+  color: #00000099;
+  text-align: right;
+  line-height: 24px;
+  width: 570px;
+  font-family: 'Lato', 'serif';
+  transition: all 0.8s; }
+
+.stripped__content__title {
+  margin-bottom: 24px;
+  font-size: 72px;
+  transform: translateX(-200%);
+  transition: all 0.8s;
+  display: inline-block; }
+  .active .stripped__content__title {
+    transform: translateX(0%); }
+  .stripped__content__title.activeStripped {
+    margin-left: -48px; }
+
+.stripped__content__subtitle {
+  font-size: 72px;
+  display: inline-block;
+  transform: translateX(-200%);
+  transition: all 0.8s; }
+  .active .stripped__content__subtitle {
+    transform: translateX(0%); }
+  .stripped__content__subtitle.activeStripped {
+    margin-left: 96px; }
+
+.stripped__content__more {
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #121212;
+  color: #FFFFFF;
+  display: block;
+  height: 61px;
+  width: 0px;
+  text-align: center;
+  line-height: 61px;
+  border: 1px solid #000000;
+  font-family: 'Lato', 'serif';
+  font-weight: bold;
+  font-size: 24px;
+  transition: all 0.8s;
+  transition-delay: 0.8s;
+  overflow: hidden; }
+  .active .stripped__content__more {
+    width: 150px; }
+
+.stripped__read-bg__arrow {
+  background-color: #F1F5F6;
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000000;
+  z-index: 1; }
+
+.collection__main {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  overflow: hidden; }
+  .collection__main h4 {
+    font-size: 48px;
+    max-width: 600px;
+    text-align: center;
+    color: #000000DE;
+    margin-bottom: 24px;
+    transition: transform 0.3s, opacity 0.6s;
+    transform: translateY(300%);
+    opacity: 0; }
+    .collection__main h4.active {
+      transform: translateY(0%);
+      opacity: 1; }
+  .collection__main p {
+    max-width: 570px;
+    text-align: center;
+    color: #00000099;
+    line-height: 24px;
+    transform: translateY(300%);
+    transition: transform 0.3s, opacity 0.6s;
+    opacity: 0; }
+    .collection__main p.active {
+      transform: translateY(0%);
+      opacity: 1; }
+
+.collection__bg {
+  background-image: url("../images/josh-nuttall-RqFUxO6MKjw-unsplash.jpg");
+  background-position: center 24%;
+  background-size: cover;
+  height: 640px; }
+
+.collection__bg__desc {
+  background-color: #FFFFFF;
+  width: 450px;
+  height: 139px;
+  margin-left: 255px;
+  margin-bottom: 77px;
+  padding: 16px; }
+  .collection__bg__desc p {
+    font-size: 24px; }
+  .collection__bg__desc h6 {
+    color: #00000099;
+    font-size: 16px; }
+
+.fixie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 96px;
+  margin-bottom: 96px;
+  overflow: hidden; }
+
+.fixie__card {
+  list-style: none;
+  display: flex; }
+  .fixie__card li {
+    width: 450px;
+    margin-right: 30px; }
+    .fixie__card li:last-child {
+      margin-right: 0px; }
+  .fixie__card__header img {
+    width: 450px;
+    height: 600px; }
+  .fixie__card__body h6 {
+    margin-top: 24px;
+    color: #000000DE;
+    font-size: 24px; }
+  .fixie__card__body time {
+    color: #00000099;
+    display: inline-block;
+    margin-top: 16px;
+    margin-bottom: 16px; }
+  .fixie__card__body p {
+    color: #00000099;
+    line-height: 24px; }
+
+.fixie_card1 {
+  transform: translateY(100%);
+  transition: all 0.8s;
+  opacity: 0; }
+  .active .fixie_card1 {
+    transform: translateY(0%);
+    opacity: 1; }
+
+.fixie_card2 {
+  transform: translateY(100%);
+  transition: all 0.8s;
+  transition-delay: 0.2s;
+  opacity: 0; }
+  .active .fixie_card2 {
+    transform: translateY(0%);
+    opacity: 1; }
+
+.fixie_card3 {
+  transform: translateY(100%);
+  transition: all 0.8s;
+  transition-delay: 0.4s;
+  opacity: 0; }
+  .active .fixie_card3 {
+    transform: translateY(0%);
+    opacity: 1; }
+
+.footer {
+  overflow: hidden; }
+  .footer__contant {
+    height: 96px;
+    width: 1410px;
+    margin: 0 auto;
+    background-color: #F1F5F6;
+    padding: 0 48px;
+    transform: translateY(100%);
+    transition: all 0.2s; }
+    .active .footer__contant {
+      transform: translateY(0%); }
+
+.footer__contant__copyright {
+  color: #00000099;
+  font-size: 14px; }
+
+.footer__contant__main li {
+  margin-right: 48px; }
+  .footer__contant__main li:last-child {
+    margin-right: 0px; }
+  .footer__contant__main li a {
+    color: #000000DE; }
+
+/*# sourceMappingURL=all.css.map */

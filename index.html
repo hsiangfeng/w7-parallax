@@ -1,10 +1,75 @@
----
-title: Fixie
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fixie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,900&display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/all.css">
+
+  </head>
+
+  <body>
+    <nav class="fixieNavbar d-flex align-items-center" id="navbar">
+      <h1 class="logo mr-auto">
+        Fixie
+      </h1>
+      <ul class="fixieNavbar__menu d-flex align-items-center">
+        <li>
+          <a href="#">Product</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header d-flex justify-content-end" id="header">
+      <div class="header__desc d-flex flex-column justify-content-center">
+        <h2 class="fs-italic">
+          Single Speed,
+          <br>
+          Single Life.
+        </h2>
+        <p>
+          More recently the “fixie” has become a popular alternative among mainly urban cyclists, offering the
+          advantage of simplicity compared with the standard multi-geared bicycle.
+        </p>
+        <a href="#" class="header__desc--btn">
+          Shop Now
+        </a>
+      </div>
+      <div class="header__collection">
+        <div class="header__collection-inner">
+          <div class="header__collection-item">
+            <img src="./assets/images/josh-nuttall-pIwu5XNvXpk-unsplash.jpg" alt="">
+          </div>
+        </div>
+        <div class="header__collection-control d-flex align-items-center">
+          <a href="#" class="header__collection-control--prev d-flex-center">
+            <span class="material-icons">
+              keyboard_arrow_left
+            </span>
+          </a>
+          <a href="#" class="header__collection-control--next d-flex-center">
+            <span class="material-icons">
+              keyboard_arrow_right
+            </span>
+          </a>
+          <h4 class="header__collection-control--caption fs-italic">Collection 001-xx</h4>
+        </div>
+      </div>
+    </header>
+
+    
 <section class="gear" id="gear">
   <div class="gear__read-bg">
     <div class="gear__read-bg__arrow d-flex-center">
@@ -116,3 +181,20 @@ current: index
     </li>
   </ul>
 </section>
+
+    <footer class="footer" id="footer">
+      <div class="footer__contant d-flex justify-content-between align-items-center">
+        <ul class="footer__contant__main d-flex">
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+        <div class="footer__contant__copyright">© 2020 Fixie. All Rights Reserved.</div>
+        <div class="logo"></div>
+      </div>
+    </footer>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
